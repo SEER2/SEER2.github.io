@@ -3,13 +3,16 @@
 <head>
   <meta charset="utf-8">
   
-  <title>SEER</title>
+  <title>2013应届生2016考研 | SEER</title>
   <meta name="author" content="SEER">
+  
+  <meta name="description" content="引子让你晚上喝咖啡，装什么汤川学，半宿没睡着。趁着睡不着考虑了怎么写这篇，觉得自己实在没有文才，生不出花来，索性就不当作是文章，而是记录我所经历的，和我用过的一些资料什么的，类似教程一样的攻略。
+按时间进行记录，辅以关键字方便查阅，在此之余，全文贯穿一些线索，比如对为什么考研不同时间段的思考。一些我">
   
   
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  
+  <meta property="og:title" content="2013应届生2016考研"/>
   <meta property="og:site_name" content="SEER"/>
 
   
@@ -45,8 +48,7 @@
 <div class="clearfix"></div>
 </header>
   <div id="content" class="inner">
-    <div id="main-col" class="alignleft"><div id="wrapper">
-  <article class="post">
+    <div id="main-col" class="alignleft"><div id="wrapper"><article class="post">
   
   <div class="post-content">
     <header>
@@ -56,7 +58,7 @@
       
       
   
-    <h1 class="title"><a href="/2017/03/25/2016-GSEE/">2013应届生2016考研</a></h1>
+    <h1 class="title">2013应届生2016考研</h1>
   
 
     </header>
@@ -128,6 +130,24 @@
       
         
         
+        
+  <div class="addthis addthis_toolbox addthis_default_style">
+    
+      <a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+    
+    
+      <a class="addthis_button_tweet"></a>
+    
+    
+      <a class="addthis_button_google_plusone" g:plusone:size="medium"></a>
+    
+    
+      <a class="addthis_button_pinterest_pinit" pi:pinit:layout="horizontal"></a>
+    
+    <a class="addthis_counter addthis_pill_style"></a>
+  </div>
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js"></script>
+
       
       <div class="clearfix"></div>
     </footer>
@@ -135,76 +155,27 @@
 </article>
 
 
+<section id="comment">
+  <h1 class="title">留言</h1>
 
-
-  <article class="post">
   
-  <div class="post-content">
-    <header>
-      
-        <div class="icon"></div>
-        <time datetime="2017-03-24T13:50:19.000Z"><a href="/2017/03/24/fedora-25-cross-compile-baidupcs/">2017-03-24</a></time>
-      
+      <div id="fb-root"></div>
+<script>
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=123456789012345";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="fb-comments" data-href="https://seer2.github.io/2017/03/25/2016-GSEE/index.html" data-num-posts="5" data-width="840" data-colorscheme="light"></div>
       
   
-    <h1 class="title"><a href="/2017/03/24/fedora-25-cross-compile-baidupcs/">Fedora 25 交叉编译小米路由器mini OpenWrt 适用的 BaiduPCS</a></h1>
-  
+</section>
 
-    </header>
-    <div class="entry">
-      
-        <h2 id="fedora-版本"><a href="#fedora-版本" class="headerlink" title="fedora 版本"></a>fedora 版本</h2><p>本机信息，输入：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">uname <span class="_">-a</span></div></pre></td></tr></table></figure></p>
-<p>显示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Linux localhost.localdomain 4.8.6-300.fc25.x86_64 <span class="comment">#1 SMP Tue Nov 1 12:36:38 UTC 2016 x86_64 x86_64 x86_64 GNU/Linux</span></div></pre></td></tr></table></figure></p>
-<p>发行版信息，输入：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">cat /etc/fedora-release</div></pre></td></tr></table></figure>
-<p>显示：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Fedora release 25 (Twenty Five)</div></pre></td></tr></table></figure></p>
-<h2 id="SDK-准备"><a href="#SDK-准备" class="headerlink" title="SDK 准备"></a>SDK 准备</h2><p>在<a href="https://downloads.openwrt.org/" target="_blank" rel="external">OpenWrt官网</a>下载对应的SDK，我这里是<a href="https://downloads.openwrt.org/barrier_breaker/14.07/ramips/mt7620a/OpenWrt-SDK-ramips-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2" target="_blank" rel="external">14.07</a>版本（小米路由器mini, MT7260A, Pandora SDK Plantform, Base on OpenWrt BARRIER BREAKER (14.09, r512)）</p>
-<p>下载后解压：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">tar -xvf OpenWrt-SDK-ramips-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2.tar.bz2</div></pre></td></tr></table></figure>
-<p>为方便使用我将解压得到的文件夹重命名：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">mv OpenWrt-SDK-ramips-for-linux-x86_64-gcc-4.8-linaro_uClibc-0.9.33.2 OpenWrt_14.07</div></pre></td></tr></table></figure>
-<p>进入SDK文件夹：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> OpenWrt_14.07</div></pre></td></tr></table></figure>
-<h2 id="编译环境准备"><a href="#编译环境准备" class="headerlink" title="编译环境准备"></a>编译环境准备</h2><p>输入下两行命令安装：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo dnf update</div><div class="line">sudo dnf install gcc-c++ ncurses-devel openssl-devel python subversion ccache -y</div></pre></td></tr></table></figure>
-<p>在SDK目录下（即此处我重命名为OpenWrt_14.07的），依次执行下列命令：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">cd</span> package</div><div class="line">git <span class="built_in">clone</span> https://github.com/GangZhuo/BaiduPCS.git</div><div class="line"><span class="built_in">cd</span> ..</div><div class="line">make config</div></pre></td></tr></table></figure>
-<p>出现：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">Image configuration (IMAGEOPT) [Y/n]</div></pre></td></tr></table></figure></p>
-<p>输入y，回车，出现：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">...</div><div class="line">BaiduPCS...... BaiduPCS (PACKAGE_BaiduPCS) [M/n/y/?]</div></pre></td></tr></table></figure></p>
-<p>输入m，回车（M指生成ipk包），接下来执行编译：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make V=99 package/BaiduPCS/openwrt/compile</div></pre></td></tr></table></figure>
-<p>最后编译成功的ipk在SDK目录下（这里ramips和SDK对应的处理器型号有关）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">OpwnWrt_14.07/bin/ramips/packages/base/</div></pre></td></tr></table></figure></p>
-<h2 id="FAQ"><a href="#FAQ" class="headerlink" title="FAQ"></a>FAQ</h2><p>Q: 小米路由器mini在安装上述步骤生成的ipk时出现以下错误信息</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">Collected errors:</div><div class="line"> * pkg_hash_fetch_best_installation_candidate: Packages <span class="keyword">for</span> BaiduPCS found, but incompatible with the architectures configured</div><div class="line"> * opkg_install_cmd: Cannot install package BaiduPCS.</div></pre></td></tr></table></figure>
-<p>A: 参照<a href="http://bbs.newifi.com/thread-832-1-1.html" target="_blank" rel="external">PandoraBox尝试安装ipk不成功，解决方法</a>，即在 /etc/opkg.conf 追加以下内容</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">arch all 100</div><div class="line">arch ramips_24kec 200</div><div class="line">arch ramips 300</div></pre></td></tr></table></figure>
-<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>Ubuntu编译参见<a href="http://blog.csdn.net/lvshaorong/article/details/52931211" target="_blank" rel="external">Ubuntu 使用Openwrt SDK交叉编译ipk包过程全纪录(超多图)</a></p>
-<h1 id="修改历史"><a href="#修改历史" class="headerlink" title="修改历史"></a>修改历史</h1><ul>
-<li>20170106 初稿</li>
-<li>20170324 修改格式，添加FAQ，并上传</li>
-</ul>
-
-      
-    </div>
-    <footer>
-      
-        
-        
-      
-      <div class="clearfix"></div>
-    </footer>
-  </div>
-</article>
-
-
-
-
-
-<nav id="pagination">
-  
-  
-  <div class="clearfix"></div>
-</nav></div></div>
+</div></div>
     <aside id="sidebar" class="alignright">
   <div class="search">
   <form action="//google.com/search" method="get" accept-charset="utf-8">
